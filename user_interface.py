@@ -1,8 +1,8 @@
 def get_name():
-    return input('Введите имя')
+    return input('Введите имя: ')
 
 def get_last_name():
-    return input('Введите фамилию')
+    return input('Введите фамилию: ')
 
 def get_phone():
     while True:
@@ -12,7 +12,7 @@ def get_phone():
         print('Некорректный телефон')
 
 def get_comment():
-    return input('Введите комментарий')
+    return input('Введите комментарий: ')
 
 def choose_format():
     while True:

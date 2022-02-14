@@ -1,4 +1,3 @@
-from unicodedata import name
 import user_interface as ui
 
 def create():
@@ -10,7 +9,8 @@ def create():
     with open(path, 'a') as data:
         data.write(f'{name};{fam};{tel};{comm}\n')
         data.write('')
-    return 0
+    return path
 
+#data = create()
 
 #a = create() # костыль для самопроверки
