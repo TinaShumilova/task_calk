@@ -15,8 +15,15 @@ def get_comment():
     return input('Введите комментарий')
 
 def choose_format():
-    return input('Введите формат (csv,txt)')
+    while True:
+        format = input('Введите формат (csv,txt): ')
+        if format in ('csv', 'txt'):
+            return format
+        print('Некорректный формат')
 
-def export_console(data: tuple):
-    print(f'Имя: {data[0]}\nФамилия: {data[1]}\nТелефон: {data[2]}\nКомментарий: {data[3]}')
+# def export_console(data: tuple):
+#     print(f'Имя: {data[0]}\nФамилия: {data[1]}\nТелефон: {data[2]}\nКомментарий: {data[3]}')
 
+def export_console(data: dict):
+    for index, value in data.items():
+        print(f'{index}: {value}')
