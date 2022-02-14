@@ -16,8 +16,8 @@ def get_comment():
 
 def choose_format():
     while True:
-        format = input('Введите формат (csv,txt): ')
-        if format in ('csv', 'txt'):
+        format = input('Введите формат (столбец, строчка): ')
+        if format in ('столбец', 'строчка'):
             return format
         print('Некорректный формат')
 
