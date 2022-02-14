@@ -1,17 +1,17 @@
 def get_name():
-    return input()
+    return input('Введите имя')
 
 def get_last_name():
-    return 0
+    return input('Введите фамилию')
 
 def get_phone():
-    return 0
+    return input('Введите телефон')
 
 def get_comment():
-    return 0
+    return input('Введите комментарий')
 
 def choose_format():
-    return 0
+    return input('Введите формат (csv,txt)')
 
-def export_console():
-    return 0
+def export_console(data: dict):
+    print('')
