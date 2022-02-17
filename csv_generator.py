@@ -13,4 +13,5 @@ def create():
     return 0
 
 
-#a = create() # костыль для самопроверки
+a = create() # костыль для самопроверки
+#open(directory, 'w', encoding="utf-16")
